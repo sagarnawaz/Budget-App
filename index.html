@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+    <div class="monthly-budget">
+      <h1 class="budget-app">Budget App</h1>
+  <h2>Monthly Budget</h2>
+  <input type="number" id="budgetInput" placeholder="Enter monthly budget"> <br>
+  <button onclick="addBudget()">Add Budget</button>
+</div>
+<div class="add-expense">
+  <h2>Add Expense</h2>
+  <input type="text" id="descriptionInput" placeholder="Enter description"><br> 
+  <input type="number" id="amountInput" placeholder="Enter amount"><br>
+  <input type="date" id="dateInput"> <br>
+  <button onclick="addExpense()">Add Expense</button>
+    </div>
+    <div class="expense-table">
+  <h2>Expenses</h2>
+  <table id="expenseTable">
+    <tr>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Date</th>
+    </tr>
+  </table>
+  
+  <h2>Remaining Budget : $<span id="remainingBudget">0</span></h2>
+</div>
+</div>
+</div>
+
+  
+</body>
+</html>
